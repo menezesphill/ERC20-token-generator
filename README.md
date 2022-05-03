@@ -3,13 +3,13 @@
 📄 Clone or fork `piggy-bank`:
 
 ```sh
-git clone https://github.com/menezesphill/piggy-bank.git
+git clone https://github.com/menezesphill/ERC20-token-generator.git
 ```
 
 💿 Install all dependencies:
 
 ```sh
-cd piggy-bank
+cd ERC20-token-generator
 yarn install
 ```
 
