@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Token Creator by taurinos.eth</title>
+  <link rel="icon" type="image/png" href="taurinos.ico">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+
+<body>
+  <main class="container-fluid">
+    <!-- <header>
+      <h1 class="text-center">E2E Test Dapp</h1>
+    </header> -->
+
+    <!-- Part 1 Setting up Basic Actions and Status-->
+    <section>
+      <!-- <h3 class="card-title">Status</h3> -->
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+          
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">  
+          <p class="info-text alert alert-secondary">Account: <span id="acc"></span></p>
+          <p class="info-text alert alert-secondary">Network: <span id="network"></span></p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+          <button class="info-text alert alert-success" id="connectButton" disabled></button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section>
+      <!-- Part 2 Contract-->
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-stretch">
+        </div>
+        <!-- /Part 2 -->
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-stretch">
+
+            <div class="card-body">
+              <h4 class="card-title h4-align">Token Generator</h4>
+              <p class="info-text alert alert-secondary">Token Name: 
+                <input type="text" class="info-text full-width mb-3" id="tokeName"></input>
+                Token Symbol:
+                <input type="text" class="info-text full-width mb-3" id="tokenSymbol"></input>
+                Token Supply:
+                <input type="text" class="info-text full-width mb-3" id="tokenSupply"></input>
+                <div class="mx-auto" style="width: 200px;">
+                  <button class="btn btn-primary btn-lg btn-block mb-3 mx-auto" id="deployButton">Deploy Token</button>
+                </div>
+              </p>
+              <p class="info-text alert alert-secondary">Contract Status: <span id="contractStatus">Not deployed</span></p>
+              <p class="info-text alert alert-success">Token Address: <span id="tokenAddress"></span></p>
+            </div>
+
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-stretch">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script type="module" src="metamask-onboarding.bundle.js" defer></script>
+  <script type="module" src="bundle.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "token-generator",
+  "version": "1.0.0",
+  "description": "Token Generator",
+  "type": "module",
+  "scripts": {
+    "lint": "standard .",
+    "lint:fix": "standard . --fix",
+    "serve": "browserify ./src/contract.js -o ./src/bundle.js && static-server ./src --port 9011",
+    "build": "browserify ./src/contract.js -o ./src/bundle.js && parcel build src/index.html"
+  },
+  "files": [
+    "/contract.js",
+    "/index.html"
+  ],
+  "author": "menezesphill",
+  "license": "MIT",
+  "dependencies": {
+    "@metamask/onboarding": "^1.0.1",
+    "browserify": "^17.0.0",
+    "parcel": "^2.3.2",
+    "web3": "^1.7.1"
+  },
+  "devDependencies": {
+    "@metamask/eslint-config": "^2.0.0",
+    "static-server": "^2.2.1"
+  }
+}
