@@ -1,6 +1,6 @@
 # 🚀 Quick Start
 
-📄 Clone or fork `piggy-bank`:
+📄 Clone or fork `ERC20-token-generator`:
 
 ```sh
 git clone https://github.com/menezesphill/ERC20-token-generator.git
