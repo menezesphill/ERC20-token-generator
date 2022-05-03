@@ -1,3 +1,6 @@
+### Need to verify your ERC20 on Etherscan?
+Mail me on: phillipe.o.m@hotmail.com
+
 # 🚀 Quick Start
 
 📄 Clone or fork `ERC20-token-generator`:
